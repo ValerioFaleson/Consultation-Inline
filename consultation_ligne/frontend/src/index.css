@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  font-family: Poppins;
+}
+
+.active {
+  @apply border-b-2 border-primary; /* Ajoutez la bordure de soulignement avec Tailwind */
+}
+
+.active hr{
+  @apply block
+}
+::-webkit-scrollbar{
+  @apply hidden
+}
+
+@media (max-width:740px) {
+  .active p{
+    @apply text-white bg-primary
+  }
+}
